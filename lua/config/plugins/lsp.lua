@@ -23,6 +23,7 @@ return {
             require('lspconfig').cssls.setup { capabilities = capabilities }
             require('lspconfig').tailwindcss.setup { capabilities = capabilities }
             require('lspconfig').emmet_language_server.setup { capabilities = capabilities }
+            require 'lspconfig'.pylsp.setup { capabilities = capabilities }
 
 
             vim.api.nvim_create_autocmd('LspAttach', {
